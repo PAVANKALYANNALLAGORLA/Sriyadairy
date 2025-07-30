@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dairy Delights - Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .cart-section {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 12px #e6ebf7;
+      padding: 36px 30px;
+    }
+    .cart-section th, .cart-section td { padding:12px 8px; }
+    .cart-section table { width:100%; border-collapse:collapse; margin-bottom:20px;}
+    .cart-section th { background: #eaf0fa;}
+    .cart-section tfoot { font-weight: bold;}
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Dairy Delights</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-btn">Cart 🛒</a>
+    </nav>
+  </header>
 
+  <section class="scroll-animate">
+    <div class="cart-section">
+      <h2>Your Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fresh Milk</td>
+            <td>1</td>
+            <td>₹50</td>
+          </tr>
+          <tr>
+            <td>Cheese</td>
+            <td>2</td>
+            <td>₹300</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>₹350</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button class="main-btn">Checkout (Mockup)</button>
+      <small>Cart is static for demo. Functionality can be extended with a backend.</small>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dairy Delights. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
