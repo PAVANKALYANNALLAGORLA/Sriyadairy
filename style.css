@@ -1,1 +1,115 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafd;
+  color: #24314d;
+  margin: 0;
+  padding: 0;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eaf0fa;
+  padding: 18px 60px;
+  box-shadow: 0 2px 8px #dfecf4;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #88c7a1;
+  text-decoration: none;
+}
+
+.navbar nav a {
+  color: #24314d;
+  margin-left: 23px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar nav a:hover, .cart-btn {
+  color: #88c7a1;
+}
+
+.hero {
+  background: linear-gradient(45deg, #e8f7ef 40%, #fff);
+  text-align: center;
+  padding: 95px 10% 95px 10%;
+  transition: background .4s;
+}
+.hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 18px;
+  animation: fadeInDown 1s;
+}
+.hero-content p {
+  color: #368b64;
+  font-size: 1.2em;
+}
+.main-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 35px;
+  background: #88c7a1;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 1em;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(136,199,161,0.18);
+  transition: background .2s, box-shadow .3s;
+}
+.main-btn:hover {
+  background: #368b64;
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .8s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.4,0,.2,1);
+}
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 36px;
+}
+.product-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 24px 20px;
+  width: 260px;
+  box-shadow: 0 2px 16px #e6ebf7;
+  text-align: center;
+  transition: transform 0.25s;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: translateY(-10px) scale(1.04);
+}
+.product-card img {
+  max-width: 80px;
+  margin-bottom: 18px;
+  transition: transform 0.36s;
+}
+.product-card:hover img {
+  transform: scale(1.2) rotate(-7deg);
+}
+
+/* Animate on scroll */
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-40px);} to {opacity:1; transform: none;} }
+
+footer {
+  text-align: center;
+  background: #eaf0fa;
+  padding: 28px 0;
+  margin-top: 32px;
+  color: #526179;
+  font-size: 1em;
+}
