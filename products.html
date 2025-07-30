@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dairy Delights - Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Dairy Delights</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-btn">Cart 🛒</a>
+    </nav>
+  </header>
 
+  <section class="scroll-animate">
+    <h2>Our Dairy Products</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="images/milk.jpg" alt="Milk">
+        <h3>Fresh Milk</h3>
+        <p>Pure, creamy farm milk. <b>₹50/L</b></p>
+        <button class="main-btn" onclick="addToCart('Fresh Milk')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/cheese.jpg" alt="Cheese">
+        <h3>Cheese</h3>
+        <p>Handmade, natural cheese. <b>₹150/200g</b></p>
+        <button class="main-btn" onclick="addToCart('Cheese')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/butter.jpg" alt="Butter">
+        <h3>Butter</h3>
+        <p>Pure, unsalted butter. <b>₹80/100g</b></p>
+        <button class="main-btn" onclick="addToCart('Butter')">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/ghee.jpg" alt="Ghee">
+        <h3>Ghee</h3>
+        <p>Rich, golden ghee. <b>₹200/250g</b></p>
+        <button class="main-btn" onclick="addToCart('Ghee')">Add to Cart</button>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dairy Delights. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
